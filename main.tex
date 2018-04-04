@@ -1,0 +1,259 @@
+\documentclass{article}
+\usepackage[lmargin=25mm,rmargin=25mm,tmargin=20mm,bmargin=30mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{tabu, float, bm}
+
+\newcommand{\specialcell}[3][c]{%
+  \begin{tabular}[#1]{@{}#2@{}}#3\end{tabular}}
+
+\title{German grammar}
+\author{Oskar Asplin}
+\date{March 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Grammar tables}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu} to 1.0\textwidth { |X[c]|X[c]|X[c]|X[c]|X[c]| } 
+        \hline
+        \multicolumn{5}{|c|}{\textbf{Definite Article}} \\
+        \hline
+         & Masculine & Neuter & Feminine & Plural \\
+        \hline
+        Nominative & Der & Das & \multicolumn{2}{|c|}{Die} \\ \cline{1-2}
+        Accusative & Den & & \multicolumn{2}{|c|}{} \\
+        \hline
+        Dative & \multicolumn{2}{|c|}{Dem} & & Den\\
+        \cline{1-3} \cline{5-5}
+        Genitive & \multicolumn{2}{|c|}{Des} & \multicolumn{2}{|l|}{\hspace{1.3cm}Der} \\
+        \hline
+    \end{tabu}
+    \caption{Same for diese}
+    \label{tab:definitiv_article}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu} to 1.0\textwidth { |X[c]|X[c]|X[c]|X[c]|X[c]| } 
+        \hline
+        \multicolumn{5}{|c|}{\textbf{Strong Adjective}} \\
+        \hline
+         & Masculine & Neuter & Feminine & Plural \\
+        \hline
+        Nominative & -er & -es & \multicolumn{2}{|c|}{-e} \\ \cline{1-2}
+        Accusative & -en & & \multicolumn{2}{|c|}{} \\
+        \hline
+        Dative & \multicolumn{2}{|c|}{-em} & & -en \\ \cline{1-3} \cline{5-5}
+        Genitive & \multicolumn{2}{|c|}{-en} & \multicolumn{2}{|l|}{\hspace{1.3cm}-er} \\
+        \hline
+    \end{tabu}
+    \caption{When there is no article or after indefinite article which is not conjugated}
+    \label{tab:strong_adjetive}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu} to 1.0\textwidth { |X[c]|X[c]|X[c]|X[c]|X[c]| } 
+        \hline
+        \multicolumn{5}{|c|}{\textbf{Weak Adjective}} \\
+        \hline
+         & Masculine & Neuter & Feminine & Plural \\
+        \hline
+        Nominative & \multicolumn{3}{|c|}{-e} & \\ \cline{1-2}
+        Accusative &  & \multicolumn{2}{|c|}{} & \\
+        \cline{1-1} \cline{3-4}
+        Dative & \multicolumn{4}{|c|}{-en} \\ \cline{1-1}
+        Genitive & \multicolumn{4}{|c|}{} \\
+        \hline
+    \end{tabu}
+    \caption{After definite article or indefinite article with conjugation}
+    \label{tab:weak_adjetive}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu} to 1.0\textwidth { |X[c]|X[c]|X[c]|X[c]|X[c]| } 
+        \hline
+        \multicolumn{5}{|c|}{\textbf{Indefinite Article}} \\
+        \hline
+         & Masculine & Neuter & Feminine & Plural \\
+        \hline
+        Nominative & \multicolumn{2}{|c|}{Ein} & Eine & (Meine) \\ \cline{1-2} \cline{5-5}
+        Accusative & Einen & & & (Meine) \\
+        \hline
+        Dative & \multicolumn{2}{|c|}{Einem} & Einer & (Meinen) \\
+        \cline{1-3} \cline{5-5}
+        Genitive & \multicolumn{2}{|c|}{Eines} & & - \\
+        \hline
+    \end{tabu}
+    \caption{Same for Mein/Dein/sein/ihr/sein/unser/euer/ihr/ihr}
+    \label{tab:ein}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu} to 1.0\textwidth { |X[c]|X[c]|X[c]|X[c]|X[c]|X[c]| } 
+        \hline
+        \multicolumn{6}{|c|}{\textbf{German pronouns - Singular}} \\
+        \hline
+         & I (me) & You - informal & He (him) & She (her) & It \\
+        \hline
+        Nominative & Ich & Du & Er & Sie & Es \\ \cline{1-4}
+        Accusative & Mich & Dich & Ihn & & \\
+        \hline
+        Dative & Mir & Dir & Ihm & Ihr & Ihm \\
+        \hline
+        (Possesive) & Mein & Dein & Sein & Ihr & Sein \\
+        \hline
+    \end{tabu}
+    \caption{German pronouns - Singular}
+    \label{tab:pron_sing}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu} to 1.0\textwidth { |X[c]|X[c]|X[c]|X[c]| } 
+        \hline
+        \multicolumn{4}{|c|}{\textbf{German pronouns - Plural}} \\
+        \hline
+         & We (us) & You - informal & They \\
+        \hline
+        Nominative & Wir & Ihr & Sie \\ 
+        \cline{1-3}
+        Accusative & Uns & Euch & \\
+        \cline{1-1} \cline{4-4}
+        Dative & & & Ihnen \\
+        \hline
+        (Possesive) & Unser & Euer & Ihr \\
+        \hline
+    \end{tabu}
+    \caption{German pronouns - Plural}
+    \label{tab:pron_plur}
+\end{table}
+
+\section{Rules}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu} to 0.7\textwidth { | X[c] | X[c] | }
+        \hline
+        Always accusative & durch, für, gegen, ohne, um \\
+        \hline
+        Always dative & aus, bei, mit, nach, von, zu \\
+        \hline
+    \end{tabu}
+    \caption{Accusative and dative prepositions}
+    \label{tab:acc_or_dat}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu} to 0.7\textwidth { | X[c] | X[c] | }
+        \hline
+        \multicolumn{2}{|c|}{an, auf, hinter, in, neben, über, unter, vor, zwischen} \\
+        \hline
+        Accusative & Movement to the place \\
+        \hline
+        Dative & Movement at the place \\
+        \hline
+    \end{tabu}
+    \caption{Alternating prepositions}
+    \label{tab:alt_prep}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu} to 0.8\textwidth { | X[l] | X[l] | p{6cm} | }
+        \hline
+        \multicolumn{1}{|c|}{German} & \multicolumn{1}{|c|}{English} & \multicolumn{1}{|c|}{Examples} \\
+        \hline
+        antworten & answer & \specialcell{l}{Antworten Sie mir! \\ Antworten Sie auf die Frage! \\ Beantworten Sie die Frage!} \\
+        \hline
+        danken & thank & \specialcell{l}{Ich danke dir. \\ Ich bedanke mich.} \\
+        \hline
+        fehlen & be missing & \specialcell{l}{Du fehlst mir \\ Was fehlt dir?} \\
+        \hline
+        folgen & follow & \specialcell{l}{Bitte folgen Sie mir! \\ Ich bin ihm gefolgt. \\ Ich befolge immer deinen Rat.} \\
+        \hline
+        gefallen & like, be pleasing to & \specialcell{l}{Dein Hemd gefällt mir. \\ Also negative, missfallen, to not like \\ Dein Hemd missfällt mir.} \\
+        \hline
+        gehören & belong to & Das Buch gehört mir, nicht dir. \\
+        \hline
+        glauben & believe & Er glaubte mir nicht. \\
+        \hline
+        helfen & help & \specialcell{l}{Hilf deinem Bruder! \\ Ich kann dir leider nicht helfen.} \\
+        \hline
+        Leid tun & be sorry & \specialcell{l}{Es tut mir Leid. \\ Sie tut mir Leid.} \\
+        \hline
+        passieren & to happen (to) & Was ist dir passiert? \\
+        \hline
+        verzeihen & pardon, forgive & Ich kann ihm nicht verzeihen. \\
+        \hline
+        wehtun & to hurt & Wo tut es Ihnen weh? \\
+        \hline
+    \end{tabu}
+    \caption{Dative verbs: Commonly used}
+    \label{tab:dat_verbs}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabu} to 0.4\textwidth { | X[l] | X[r] | }
+        \hline
+        zu + dem & zum\\
+        \hline
+        zu + der &  zur\\
+        \hline
+        von + dem &  vom\\
+        \hline
+        bei + dem &  beim\\
+        \hline
+        in + das &  ins\\
+        \hline
+    \end{tabu}
+    \caption{Abbreviations}
+    \label{tab:abbreviations}
+\end{table}
+
+
+\section{Weird phrases and div}
+Viel for uncountable/mass nouns (viel Zucker, viel Spaß, viel deutsch) 
+\\ \\
+$\textbf{Jede}$ at beginning of a sentence - $\textbf{Pro}$ at end
+\\ \\
+We replace the orange with a potato - Wir  die Orange durch eine Kartoffel
+\\ \\
+Both - Sowohl als auch
+\\ \\
+As good as them - So gut wie sie
+\\ \\
+She never liked me either - Mich hat sie auch nie gemocht
+\\ \\
+Did he look like a doctor? - Sah er wie ein Arzt aus?
+\\ \\
+As of now - Ab jetzt
+\\ \\
+Over and over again - Immer wieder
+\\ \\
+Practice makes perfect - Übung macht den Meister
+
+
+\section{Random words}
+Ansonsten - Otherwise
+Allerdings - However
+Bisher - So far
+Darum - Because
+Deshalb - that is why
+Dadurch - As a result/That is why
+Dabei - With that
+Damit - So that/with that
+Dazu - About it
+Gab - Was
+\\ \\
+Kleider is both "clothes" and "dresses"
+
+\end{document}
